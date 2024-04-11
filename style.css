@@ -2,11 +2,34 @@ body {
     margin: 0;
     background-color: #fefefe;
 }
+
+/* Text */
 h3 {
-    font-family: 'Fira Code', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    font-family: 'Roboto', sans-serif;
+}
+h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    font-family: 'VT323', monospace;
+}
+h6 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+li::marker {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'VT323', monospace;
 }
 p {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.01rem;
+    line-height: 1.36rem;
 }
 a {
     text-decoration: none;
@@ -16,6 +39,8 @@ a {
 a:hover {
     color: #8db600;
 }
+
+/* Navigation */
 .header {
     background-color: #333;
     color: #fff;
@@ -36,7 +61,7 @@ a:hover {
 .nav {
     margin: 0 auto;
     display: flex;
-    max-width: 50rem;
+    max-width: 62rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -64,6 +89,6 @@ a:hover {
 
 @media (min-width: 62rem) {
     .content {
-        max-width: 50rem;
+        max-width: 62rem;
     }
 }
