@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: #fefefe;
+}
+h3 {
+    font-family: 'Fira Code', monospace;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fefefe;
+    font-family: 'Public Sans', sans-serif;
+}
+a:hover {
+    color: #8db600;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.2rem;
+    text-align: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.nav {
+    margin: 0 auto;
+    display: flex;
+    max-width: 50rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li {
+    margin: 0 0.6rem;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+@media (max-width: 38rem) {
+    .menu {
+        flex-direction: column;
+    }
+    .nav {
+        justify-content: space-around;
+    }
+    
+    .menu li {
+        margin: 0.3rem 0;
+    }
+}
+
+@media (min-width: 62rem) {
+    .content {
+        max-width: 50rem;
+    }
+}
