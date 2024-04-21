@@ -50,6 +50,26 @@ a:hover {
 .darkify:hover {
     color: #0073cf;
 }
+.reference {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.5rem;
+    letter-spacing: -0.2px;
+    color: #3b3c36;
+}
+.l-reference {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+    letter-spacing: -0.2px;
+    color: #3b3c36;
+}
+.xl-reference {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.3px;
+    color: #3b3c36;
+}
 
 /* Navigation */
 .header {
@@ -79,6 +99,10 @@ a:hover {
 }
 .menu li {
     margin: 0 0.6rem;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
 }
 .btn-contact {
     display: flex;
@@ -115,10 +139,12 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 62rem;
+    width: 82rem;
     padding: 1rem;
 }
 .banner-image {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 .banner-text {
@@ -134,7 +160,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-width: 62rem;
+
     gap: 1rem;
 }
 .featured-links {
@@ -166,12 +192,18 @@ a:hover {
 }
 .ikiboi {
     display: flex;
+    flex-direction: column;
     width: 40%;
     justify-content: center;
 }
+.ikiboi img {
+    padding-bottom: 0.2rem;
+}
 .feature-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 35%;
 }
 .feature-text {
@@ -204,18 +236,61 @@ a:hover {
     text-align: right;
 }
 
+/* Image */
+.portrait {
+    max-width: 75%;
+}
+.thumb {
+    max-width: 96px;
+    max-height: 96px;
+}
+
 @media (max-width: 38rem) {
     .menu {
+        display: none;
+    }
+    .menu.active {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 3.6rem;
+        min-width: 100%;
+        background-color: #121214;
+        color: #fff
+        padding: 1.2rem;
+        text-align: center;
     }
     .nav {
+        position: relative;
         justify-content: space-around;
+    }
+    nav ul {
+        display: none;
     }
     .menu li {
         margin: 0.3rem 0;
     }
+    .menu-toggle {
+        display: block;
+    }
     .kill-mob {
         display: none;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .portrait {
+        max-width: 100%;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    .feature {
+        gap: 2.4rem;
+    }
+    .feature h3 {
+        line-height: 1.4rem;
     }
 }
 
