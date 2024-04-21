@@ -238,7 +238,7 @@ a:hover {
 .footer-container {
     background-color: #121214;
 }
-.footer {
+.foot {
     background-color: #121214;
     padding: 4.8rem 0 0 0;
     text-align: center;
@@ -328,7 +328,7 @@ a:hover {
 }
 
 @media (min-width: 39rem) {
-    .footer {
+    .foot {
         display: grid;
         padding: 12rem 0 0 0;
         width: 72rem;
