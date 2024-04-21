@@ -174,7 +174,7 @@ a:hover {
 }
 .feature h3 {
     font-size: 1.2rem;
-    line-height: 0.6rem;
+
     margin: 1.4rem 0 0 0;
     letter-spacing: 0.2px;
 }
@@ -324,6 +324,11 @@ a:hover {
     }
     .feature h3 {
         line-height: 1.4rem;
+    }
+    .xl-reference {
+        padding-top: 0.2rem;
+        font-size: 0.6rem;
+        line-height: 0.7rem;
     }
 }
 
